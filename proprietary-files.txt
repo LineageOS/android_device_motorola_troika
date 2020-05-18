@@ -1,0 +1,33 @@
+# camera
+vendor/lib/hw/camera.exynos9610.so
+vendor/lib/libexynoscamera3.so
+vendor/lib64/hw/camera.exynos9610.so
+vendor/lib64/libexynoscamera3.so
+
+# firmware
+vendor/firmware/fimc_is_lib.bin
+vendor/firmware/fimc_is_rta.bin
+vendor/firmware/himax-hix83112a-hx83112a-0C00-208-troika.bin
+vendor/firmware/novatek_ts-nov36672a-NT36672A-190108-04-troika.bin
+vendor/firmware/os.checked_0.bin
+vendor/firmware/os.checked_1.bin
+vendor/firmware/os.checked_2.bin
+vendor/firmware/os.checked_3.bin
+vendor/firmware/os.checked_4.bin
+vendor/firmware/os.checked_5.bin
+vendor/firmware/os.checked_6.bin
+vendor/firmware/os.checked_7.bin
+vendor/firmware/os.checked_8.bin
+vendor/firmware/setfile_12a10.bin
+vendor/firmware/setfile_12a10ff.bin
+vendor/firmware/setfile_16885c.bin
+vendor/firmware/setfile_5e9_troika.bin
+
+# NFC
+vendor/etc/sec_s3nrn81_rfreg.bin
+
+# sensors
+vendor/lib/hw/sensors.troika_sprout.so
+vendor/lib/sensors.chub.so
+vendor/lib64/hw/sensors.troika_sprout.so
+vendor/lib64/sensors.chub.so
