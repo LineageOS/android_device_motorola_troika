@@ -24,5 +24,8 @@ TARGET_OTA_ASSERT_DEVICE := troika,one_action
 # Kernel
 TARGET_KERNEL_CONFIG := troika_defconfig
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # inherit from the proprietary version
 -include vendor/motorola/troika/BoardConfigVendor.mk
