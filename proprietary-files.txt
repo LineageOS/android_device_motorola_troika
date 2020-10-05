@@ -31,3 +31,9 @@ vendor/lib/hw/sensors.troika_sprout.so
 vendor/lib/sensors.chub.so
 vendor/lib64/hw/sensors.troika_sprout.so
 vendor/lib64/sensors.chub.so
+
+# ril
+vendor/lib/libril_sitril.so
+vendor/lib/libsitril.so
+vendor/lib64/libril_sitril.so
+vendor/lib64/libsitril.so
