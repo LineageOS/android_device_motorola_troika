@@ -65,4 +65,15 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
 
+# Fix proprietary blobs
+BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+
+# Remove libhidltransport dependency
+patchelf --remove-needed libhidltransport.so $BLOB_ROOT/vendor/lib/libril_sitril.so
+patchelf --remove-needed libhidltransport.so $BLOB_ROOT/vendor/lib64/libril_sitril.so
+
+# Remove libhwbinder dependency
+patchelf --remove-needed libhwbinder.so $BLOB_ROOT/vendor/lib/libril_sitril.so
+patchelf --remove-needed libhwbinder.so $BLOB_ROOT/vendor/lib64/libril_sitril.so
+
 "${MY_DIR}/setup-makefiles.sh"
