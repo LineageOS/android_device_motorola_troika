@@ -17,4 +17,4 @@
 # Inherit from common
 $(call inherit-product, device/motorola/exynos9610-common/common.mk)
 
-$(call inherit-product-if-exists, vendor/motorola/troika/troika-vendor.mk)
+$(call inherit-product, vendor/motorola/troika/troika-vendor.mk)
