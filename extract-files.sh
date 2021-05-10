@@ -62,11 +62,11 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTIO
 BLOB_ROOT="$ANDROID_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 # Remove libhidltransport dependency
-"${PATCHELF}" --remove-needed libhidltransport.so $BLOB_ROOT/vendor/lib/libril_sitril.so
-"${PATCHELF}" --remove-needed libhidltransport.so $BLOB_ROOT/vendor/lib64/libril_sitril.so
+"${PATCHELF}" --remove-needed "libhidltransport.so" "${BLOB_ROOT}"/vendor/lib/libril_sitril.so
+"${PATCHELF}" --remove-needed "libhidltransport.so" "${BLOB_ROOT}"/vendor/lib64/libril_sitril.so
 
 # Remove libhwbinder dependency
-"${PATCHELF}" --remove-needed libhwbinder.so $BLOB_ROOT/vendor/lib/libril_sitril.so
-"${PATCHELF}" --remove-needed libhwbinder.so $BLOB_ROOT/vendor/lib64/libril_sitril.so
+"${PATCHELF}" --remove-needed "libhwbinder.so" "${BLOB_ROOT}"/vendor/lib/libril_sitril.so
+"${PATCHELF}" --remove-needed "libhwbinder.so" "${BLOB_ROOT}"/vendor/lib64/libril_sitril.so
 
 "${MY_DIR}/setup-makefiles.sh"
