@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,19 +13,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from common
--include device/motorola/exynos9610-common/BoardConfigCommon.mk
+## Inherit from the common tree
+include device/motorola/exynos9610-common/BoardConfigCommon.mk
+
+## Inherit from the proprietary configuration
+include vendor/motorola/troika/BoardConfigVendor.mk
 
 DEVICE_PATH := device/motorola/troika
 
-# Assert
+## Assert
 TARGET_OTA_ASSERT_DEVICE := troika,one_action
 
-# Kernel
+## Kernel
 TARGET_KERNEL_CONFIG := troika_defconfig
 
-# Properties
+## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
-# inherit from the proprietary version
-include vendor/motorola/troika/BoardConfigVendor.mk

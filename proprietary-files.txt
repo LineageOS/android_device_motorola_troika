@@ -1,12 +1,12 @@
-# Device proprietary files - from motorola/troika_retail/troika_sprout:10/QSBS30.62-29-11-5/db5cb, unless pinned
+## Device proprietary files - from motorola/troika_retail/troika_sprout:10/QSBS30.62-29-11-5/db5cb, unless pinned
 
-# camera
+## Camera
 vendor/lib/hw/camera.exynos9610.so
 vendor/lib/libexynoscamera3.so
 vendor/lib64/hw/camera.exynos9610.so
 vendor/lib64/libexynoscamera3.so
 
-# firmware
+## Firmware
 vendor/firmware/fimc_is_lib.bin
 vendor/firmware/fimc_is_rta.bin
 vendor/firmware/himax-hix83112a-hx83112a-0C00-208-troika.bin
@@ -25,16 +25,16 @@ vendor/firmware/setfile_12a10ff.bin
 vendor/firmware/setfile_16885c.bin
 vendor/firmware/setfile_5e9_troika.bin
 
-# NFC
+## NFC
 vendor/etc/sec_s3nrn81_rfreg.bin
 
-# sensors
+## Sensors
 vendor/lib/hw/sensors.troika_sprout.so
 vendor/lib/sensors.chub.so
 vendor/lib64/hw/sensors.troika_sprout.so
 vendor/lib64/sensors.chub.so
 
-# ril
+## RIL
 vendor/lib/libril_sitril.so
 vendor/lib/libsitril.so
 vendor/lib64/libril_sitril.so
