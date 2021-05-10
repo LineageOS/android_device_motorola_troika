@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,18 +14,18 @@
 # limitations under the License.
 #
 
-# Inherit from those products. Most specific first.
+## Inherit from generic products, most specific first
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit from troika device
+## Inherit from troika device
 $(call inherit-product, device/motorola/troika/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
+## Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Device identifier. This must come after all inclusions
+## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := troika
 PRODUCT_NAME := lineage_troika
 PRODUCT_BRAND := Motorola
@@ -34,7 +34,7 @@ PRODUCT_MANUFACTURER := Motorola
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-# Use the latest approved GMS identifiers
+## Use the latest CTS approved build ID
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=troika_sprout \
     PRIVATE_BUILD_DESC="10/QSBS30.62-29-7/0ea60:user/release-keys"
