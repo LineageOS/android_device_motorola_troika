@@ -1,4 +1,4 @@
-## Device proprietary files - from motorola/troika_retail/troika_sprout:10/QSBS30.62-29-11-5/db5cb, unless pinned
+## Device proprietary files - from motorola/troika_retail/troika_sprout:11/RSBS31.Q1-48-36-20/3e578:user/release-keys, unless pinned
 
 ## Camera
 vendor/lib/hw/camera.exynos9610.so

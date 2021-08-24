@@ -1,5 +1,2 @@
-## IMEI
-ro.radio.imei.sv=13
-
 ## Sensors
 ro.hardware.sensors=troika_sprout
