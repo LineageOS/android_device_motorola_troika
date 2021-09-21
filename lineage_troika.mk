@@ -28,15 +28,15 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 ## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := troika
 PRODUCT_NAME := lineage_troika
-PRODUCT_BRAND := Motorola
-PRODUCT_MODEL := One Action
-PRODUCT_MANUFACTURER := Motorola
+PRODUCT_BRAND := motorola
+PRODUCT_MODEL := motorola one action
+PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 ## Use the latest CTS approved build identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=troika_sprout \
+    PRODUCT_NAME=troika \
     PRIVATE_BUILD_DESC="10/QSBS30.62-29-7/0ea60:user/release-keys"
 
 BUILD_FINGERPRINT := motorola/troika_retail/troika_sprout:10/QSBS30.62-29-7/0ea60:user/release-keys
