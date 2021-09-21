@@ -37,6 +37,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 ## Use the latest CTS approved build identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=troika \
-    PRIVATE_BUILD_DESC="10/QSBS30.62-29-7/0ea60:user/release-keys"
+    PRIVATE_BUILD_DESC="troika-user 10 QSBS30.62-29-7 0ea60 release-keys"
 
 BUILD_FINGERPRINT := motorola/troika_retail/troika_sprout:10/QSBS30.62-29-7/0ea60:user/release-keys
