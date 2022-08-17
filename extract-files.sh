@@ -61,6 +61,11 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTIO
 # Fix proprietary blobs
 BLOB_ROOT="$ANDROID_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
+"${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${BLOB_ROOT}"/vendor/lib/sensors.chub.so
+"${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${BLOB_ROOT}"/vendor/lib64/sensors.chub.so
+"${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${BLOB_ROOT}"/vendor/lib/hw/sensors.troika_sprout.so
+"${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${BLOB_ROOT}"/vendor/lib64/hw/sensors.troika_sprout.so
+
 # Remove libhidltransport dependency
 "${PATCHELF}" --remove-needed "libhidltransport.so" "${BLOB_ROOT}"/vendor/lib/libril_sitril.so
 "${PATCHELF}" --remove-needed "libhidltransport.so" "${BLOB_ROOT}"/vendor/lib64/libril_sitril.so
