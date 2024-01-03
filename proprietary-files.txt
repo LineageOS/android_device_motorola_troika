@@ -2,9 +2,9 @@
 
 ## Camera
 vendor/lib/hw/camera.exynos9610.so
-vendor/lib/libexynoscamera3.so
+vendor/lib/libexynoscamera3.so|bfa458946d6cf8b5c6fbf6e78c8cd85f5db3631a
 vendor/lib64/hw/camera.exynos9610.so
-vendor/lib64/libexynoscamera3.so
+vendor/lib64/libexynoscamera3.so|bc2aebfc0a5e3b552417bf0cb2be0e70f21c1c35
 
 ## Firmware
 vendor/firmware/fimc_is_lib.bin
@@ -36,6 +36,6 @@ vendor/lib64/sensors.chub.so
 
 ## RIL
 vendor/lib/libril_sitril.so
-vendor/lib/libsitril.so
+vendor/lib/libsitril.so|9995cba90774db72a7e689b11e0bbbe011b61242
 vendor/lib64/libril_sitril.so
-vendor/lib64/libsitril.so
+vendor/lib64/libsitril.so|5e8d464decf1c809fb1dea54e7115abbc445f378
