@@ -1,41 +1,6 @@
 ## Device proprietary files - from motorola/troika_retail/troika_sprout:11/RSBS31.Q1-48-36-20/3e578:user/release-keys, unless pinned
 
-## Camera
-vendor/lib/hw/camera.exynos9610.so
-vendor/lib/libexynoscamera3.so|bfa458946d6cf8b5c6fbf6e78c8cd85f5db3631a
-vendor/lib64/hw/camera.exynos9610.so
-vendor/lib64/libexynoscamera3.so|bc2aebfc0a5e3b552417bf0cb2be0e70f21c1c35
-
-## Firmware
-vendor/firmware/fimc_is_lib.bin
-vendor/firmware/fimc_is_rta.bin
-vendor/firmware/himax-hix83112a-hx83112a-0C00-208-troika.bin
-vendor/firmware/novatek_ts-nov36672a-NT36672A-190108-04-troika.bin
-vendor/firmware/os.checked_0.bin
-vendor/firmware/os.checked_1.bin
-vendor/firmware/os.checked_2.bin
-vendor/firmware/os.checked_3.bin
-vendor/firmware/os.checked_4.bin
-vendor/firmware/os.checked_5.bin
-vendor/firmware/os.checked_6.bin
-vendor/firmware/os.checked_7.bin
-vendor/firmware/os.checked_8.bin
-vendor/firmware/setfile_12a10.bin
-vendor/firmware/setfile_12a10ff.bin
-vendor/firmware/setfile_16885c.bin
-vendor/firmware/setfile_5e9_troika.bin
-
-## NFC
-vendor/etc/sec_s3nrn81_rfreg.bin
-
-## Sensors
-vendor/lib/hw/sensors.troika_sprout.so
-vendor/lib/sensors.chub.so
-vendor/lib64/hw/sensors.troika_sprout.so
-vendor/lib64/sensors.chub.so
-
-## RIL
-vendor/lib/libril_sitril.so
-vendor/lib/libsitril.so|9995cba90774db72a7e689b11e0bbbe011b61242
-vendor/lib64/libril_sitril.so
-vendor/lib64/libsitril.so|5e8d464decf1c809fb1dea54e7115abbc445f378
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
