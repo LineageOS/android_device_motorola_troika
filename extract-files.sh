@@ -12,11 +12,6 @@ function blob_fixup() {
          vendor/lib*/sensors.chub.so|vendor/lib*/hw/sensors.troika_sprout.so)
              "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
              ;;
-         # Remove libhidltransport/libhwbinder dependencies
-         vendor/lib*/libril_sitril.so)
-             "${PATCHELF}" --remove-needed "libhidltransport.so" "${2}"
-             "${PATCHELF}" --remove-needed "libhwbinder.so" "${2}"
-             ;;
     esac
 }
 
