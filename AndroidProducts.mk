@@ -15,8 +15,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_troika.mk
-
-COMMON_LUNCH_CHOICES := \
-    lineage_troika-user \
-    lineage_troika-userdebug \
-    lineage_troika-eng
