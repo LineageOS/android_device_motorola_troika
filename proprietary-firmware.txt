@@ -3,5 +3,5 @@
 bootloader.img;AB
 keystorage.img;AB
 ldfw.img;AB
-logo.bin:logo.img;AB
+logo.bin:logo.img;AB|5d28da59122b2f87a745f11b4a334586e396bfba
 modem.bin:modem.img;AB
