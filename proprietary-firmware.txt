@@ -3,5 +3,5 @@
 bootloader.img;AB
 keystorage.img;AB
 ldfw.img;AB
-logo.img;AB
-modem.img;AB
+logo.bin:logo.img;AB
+modem.bin:modem.img;AB
