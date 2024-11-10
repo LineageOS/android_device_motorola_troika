@@ -14,11 +14,11 @@ vendor/lib64/libdapparamstorage.so
 
 ## Camera
 vendor/lib/hw/camera.exynos9610.so
-vendor/lib/libexynoscamera3.so|bfa458946d6cf8b5c6fbf6e78c8cd85f5db3631a
-vendor/lib/libhwjpeg.so
+vendor/lib/libexynoscamera3.so;DISABLE_CHECKELF|bfa458946d6cf8b5c6fbf6e78c8cd85f5db3631a
+vendor/lib/libhwjpeg.so;MODULE=libhwjpeg_vendor
 vendor/lib64/hw/camera.exynos9610.so
-vendor/lib64/libexynoscamera3.so|bc2aebfc0a5e3b552417bf0cb2be0e70f21c1c35
-vendor/lib64/libhwjpeg.so
+vendor/lib64/libexynoscamera3.so;DISABLE_CHECKELF|bc2aebfc0a5e3b552417bf0cb2be0e70f21c1c35
+vendor/lib64/libhwjpeg.so;MODULE=libhwjpeg_vendor
 
 ## Firmware
 vendor/firmware/fimc_is_lib.bin
@@ -50,7 +50,7 @@ vendor/lib64/sensors.chub.so
 
 ## RIL
 vendor/bin/cbd
-vendor/bin/hw/rild_exynos
+vendor/bin/hw/rild_exynos;DISABLE_CHECKELF
 vendor/etc/sim_configuration.xml
 vendor/lib/libaudio-ril.so
 vendor/lib/libril_sitril.so
