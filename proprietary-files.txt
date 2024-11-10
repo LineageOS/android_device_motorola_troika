@@ -1,5 +1,8 @@
 ## Device proprietary files - from motorola/troika_retail/troika_sprout:11/RSBS31.Q1-48-36-20/3e578:user/release-keys, unless pinned
 
+# Current blobs with ELF checks disabled:
+# libexynoscamera3: Depends pn Android.mk only libexynosv4l2
+
 ## Audio
 vendor/bin/main_abox
 vendor/etc/ap_gain_mmul.bin
@@ -14,11 +17,11 @@ vendor/lib64/libdapparamstorage.so
 
 ## Camera
 vendor/lib/hw/camera.exynos9610.so
-vendor/lib/libexynoscamera3.so
-vendor/lib/libhwjpeg.so
+vendor/lib/libexynoscamera3.so;DISABLE_CHECKELF
+vendor/lib/libhwjpeg.so;MODULE=libhwjpeg_vendor
 vendor/lib64/hw/camera.exynos9610.so
-vendor/lib64/libexynoscamera3.so
-vendor/lib64/libhwjpeg.so
+vendor/lib64/libexynoscamera3.so;DISABLE_CHECKELF
+vendor/lib64/libhwjpeg.so;MODULE=libhwjpeg_vendor
 
 ## Firmware
 vendor/firmware/fimc_is_lib.bin
