@@ -35,7 +35,42 @@ vendor/lib64/hw/sensors.troika_sprout.so
 vendor/lib64/sensors.chub.so
 
 ## RIL
+
+## RIL
+vendor/bin/cbd
+vendor/bin/hw/rild_exynos;DISABLE_CHECKELF
+vendor/etc/sim_configuration.xml
+vendor/lib/libaudio-ril.so
 vendor/lib/libril_sitril.so
+vendor/lib/libsitril-audio.so
+vendor/lib/libsitril-client.so
+vendor/lib/libsitril-gps.so
+vendor/lib/libsitril-ims.so
+vendor/lib/libsitril-nr.so
+vendor/lib/libsitril-psensor.so
+vendor/lib/libsitril-sar.so
+vendor/lib/libsitril-se.so
+vendor/lib/libsitril-wlan.so
 vendor/lib/libsitril.so|9995cba90774db72a7e689b11e0bbbe011b61242
+vendor/lib/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so;MODULE_SUFFIX=-vendor
+vendor/lib/vendor.samsung_slsi.telephony.hardware.radio@1.0.so;MODULE_SUFFIX=-vendor
+vendor/lib/vendor.samsung_slsi.telephony.hardware.radio@1.1.so;MODULE_SUFFIX=-vendor
+vendor/lib/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so;MODULE_SUFFIX=-vendor
+vendor/lib/vendor.samsung_slsi.telephony.hardware.radioExternal@1.1.so
+vendor/lib64/libadropbox.so
 vendor/lib64/libril_sitril.so
+vendor/lib64/libsitril-audio.so
+vendor/lib64/libsitril-client.so
+vendor/lib64/libsitril-gps.so
+vendor/lib64/libsitril-ims.so
+vendor/lib64/libsitril-nr.so
+vendor/lib64/libsitril-psensor.so
+vendor/lib64/libsitril-sar.so
+vendor/lib64/libsitril-se.so
+vendor/lib64/libsitril-wlan.so
 vendor/lib64/libsitril.so|5e8d464decf1c809fb1dea54e7115abbc445f378
+vendor/lib64/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so;MODULE_SUFFIX=-vendor
+vendor/lib64/vendor.samsung_slsi.telephony.hardware.radio@1.0.so;MODULE_SUFFIX=-vendor
+vendor/lib64/vendor.samsung_slsi.telephony.hardware.radio@1.1.so;MODULE_SUFFIX=-vendor
+vendor/lib64/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so;MODULE_SUFFIX=-vendor
+vendor/lib64/vendor.samsung_slsi.telephony.hardware.radioExternal@1.1.so
