@@ -8,6 +8,13 @@
 
 function blob_fixup() {
     case "${1}" in
+        # Missing libaudioproxy symbols
+        vendor/lib/libaudioproxy.so)
+            [ "$2" = "" ] && return 0
+            for LIBAUDIOPROXY_SHIM in $(grep -L "libaudioproxy_shim.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libaudioproxy_shim.so" "${LIBAUDIOPROXY_SHIM}"
+            done
+            ;;
         # Missing libutils symbols
         vendor/lib*/sensors.chub.so|vendor/lib*/hw/sensors.troika_sprout.so)
             [ "$2" = "" ] && return 0

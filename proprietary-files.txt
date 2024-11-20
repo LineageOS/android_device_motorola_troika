@@ -1,10 +1,24 @@
 ## Device proprietary files - from motorola/troika_retail/troika_sprout:11/RSBS31.Q1-48-36-20/3e578:user/release-keys, unless pinned
 
+## Audio
+vendor/bin/main_abox
+vendor/etc/ap_gain_mmul.bin
+vendor/etc/dolby/dax-default.xml
+vendor/lib/hw/audio.primary.exynos9610.so
+vendor/lib/libalsautils_sec.so
+vendor/lib/libaudioproxy.so
+vendor/lib/libdapparamstorage.so
+vendor/lib/libmotaudioutils.so
+vendor/lib/libunshorten.so
+vendor/lib64/libdapparamstorage.so
+
 ## Camera
 vendor/lib/hw/camera.exynos9610.so
 vendor/lib/libexynoscamera3.so|bfa458946d6cf8b5c6fbf6e78c8cd85f5db3631a
+vendor/lib/libhwjpeg.so
 vendor/lib64/hw/camera.exynos9610.so
 vendor/lib64/libexynoscamera3.so|bc2aebfc0a5e3b552417bf0cb2be0e70f21c1c35
+vendor/lib64/libhwjpeg.so
 
 ## Firmware
 vendor/firmware/fimc_is_lib.bin
@@ -35,7 +49,40 @@ vendor/lib64/hw/sensors.troika_sprout.so
 vendor/lib64/sensors.chub.so
 
 ## RIL
+vendor/bin/cbd
+vendor/bin/hw/rild_exynos
+vendor/etc/sim_configuration.xml
+vendor/lib/libaudio-ril.so
 vendor/lib/libril_sitril.so
+vendor/lib/libsitril-audio.so
+vendor/lib/libsitril-client.so
+vendor/lib/libsitril-gps.so
+vendor/lib/libsitril-ims.so
+vendor/lib/libsitril-nr.so
+vendor/lib/libsitril-psensor.so
+vendor/lib/libsitril-sar.so
+vendor/lib/libsitril-se.so
+vendor/lib/libsitril-wlan.so
 vendor/lib/libsitril.so|9995cba90774db72a7e689b11e0bbbe011b61242
+vendor/lib/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so
+vendor/lib/vendor.samsung_slsi.telephony.hardware.radio@1.0.so
+vendor/lib/vendor.samsung_slsi.telephony.hardware.radio@1.1.so
+vendor/lib/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so
+vendor/lib/vendor.samsung_slsi.telephony.hardware.radioExternal@1.1.so
+vendor/lib64/libadropbox.so
 vendor/lib64/libril_sitril.so
+vendor/lib64/libsitril-audio.so
+vendor/lib64/libsitril-client.so
+vendor/lib64/libsitril-gps.so
+vendor/lib64/libsitril-ims.so
+vendor/lib64/libsitril-nr.so
+vendor/lib64/libsitril-psensor.so
+vendor/lib64/libsitril-sar.so
+vendor/lib64/libsitril-se.so
+vendor/lib64/libsitril-wlan.so
 vendor/lib64/libsitril.so|5e8d464decf1c809fb1dea54e7115abbc445f378
+vendor/lib64/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so
+vendor/lib64/vendor.samsung_slsi.telephony.hardware.radio@1.0.so
+vendor/lib64/vendor.samsung_slsi.telephony.hardware.radio@1.1.so
+vendor/lib64/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so
+vendor/lib64/vendor.samsung_slsi.telephony.hardware.radioExternal@1.1.so
