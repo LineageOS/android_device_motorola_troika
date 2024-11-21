@@ -56,10 +56,6 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib/sensors.chub.so', 'vendor/lib64/sensors.chub.so', 'vendor/lib/hw/sensors.troika_sprout.so', 'vendor/lib64/hw/sensors.troika_sprout.so'): blob_fixup()
         .patchelf_version('0_18')
         .replace_needed('libutils.so', 'libutils-v32.so'),
-    ('vendor/lib/libril_sitril.so', 'vendor/lib64/libril_sitril.so'): blob_fixup()
-        .patchelf_version('0_18')
-        .remove_needed('libhidltransport.so')
-        .remove_needed('libhwbinder.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
