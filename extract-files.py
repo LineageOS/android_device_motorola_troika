@@ -41,6 +41,7 @@ libs_remove = (
      'libexynosutils',
      'libexynosv4l2',
      'libGrallocWrapper',
+     'libgiantmscl',
 )
 
 lib_fixups: lib_fixups_user_type = {
