@@ -24,21 +24,12 @@ from extract_utils.main import (
 namespace_imports = [
     'vendor/motorola/exynos9610-common',
     'device/motorola/exynos9610-common',
+    'hardware/samsung_slsi-linaro/exynos',
     'hardware/samsung_slsi-linaro/graphics',
 ]
 
-libs_add_vendor_suffix = (
-    'libhwjpeg',
-)
-
-
 libs_remove = (
-     'libandroidicu',
-     'libcsc',
-     'libexynosutils',
-     'libexynosv4l2',
      'libGrallocWrapper',
-     'libgiantmscl',
 )
 
 lib_fixups: lib_fixups_user_type = {
