@@ -51,8 +51,6 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'vendor/lib/libaudioproxy.so': blob_fixup()
-        .add_needed('libaudioproxy_shim.so'),
     ('vendor/lib/sensors.chub.so', 'vendor/lib64/sensors.chub.so', 'vendor/lib/hw/sensors.troika_sprout.so', 'vendor/lib64/hw/sensors.troika_sprout.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
 }  # fmt: skip
