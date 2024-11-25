@@ -32,8 +32,6 @@ libs_add_vendor_suffix = (
     'libhwjpeg',
 )
 
-def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
-    return f'{lib}_{partition}' if partition == 'vendor' else None
 
 libs_remove = (
      'libandroidicu',
@@ -46,7 +44,6 @@ libs_remove = (
 
 lib_fixups: lib_fixups_user_type = {
     libs_proto_3_9_1: lib_fixup_vendorcompat,
-    libs_add_vendor_suffix: lib_fixup_vendor_suffix,
     libs_remove: lib_fixup_remove,
 }
 
