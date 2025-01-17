@@ -24,6 +24,7 @@ namespace_imports = [
     'vendor/motorola/exynos9610-common',
     'device/motorola/exynos9610-common',
     'hardware/samsung_slsi-linaro/exynos',
+    'hardware/samsung_slsi-linaro/exynos/gralloc3',
     'hardware/samsung_slsi-linaro/graphics',
 ]
 
