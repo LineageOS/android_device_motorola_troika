@@ -11,4 +11,4 @@ $(call inherit-product, vendor/motorola/troika/troika-vendor.mk)
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    TroikaWifiOverlay
+    WifiResTarget
