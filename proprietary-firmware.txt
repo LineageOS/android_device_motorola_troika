@@ -1,4 +1,4 @@
-# Firmware - from motorola/troika_retail/troika_sprout:11/RSBS31.Q1-48-36-20/3e578:user/release-keys - (factory image).
+# All firmware images below are extracted from the release mentioned in proprietary-files.txt
 
 bootloader.img;AB
 keystorage.img;AB
