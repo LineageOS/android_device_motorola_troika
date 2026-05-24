@@ -15,7 +15,7 @@ DEVICE_PATH := device/motorola/troika
 TARGET_OTA_ASSERT_DEVICE := troika,one_action
 
 ## Kernel
-TARGET_KERNEL_CONFIG := troika_defconfig
+TARGET_KERNEL_CONFIG += ext_config/troika.config
 
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
